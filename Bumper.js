@@ -1,16 +1,16 @@
- ==UserScript==
- @name         RocketLeague Autobumper - Bump
- @namespace    httptampermonkey.net
- @version      0.1
- @description  try to take over the world!
- @author       You
- @match        httpsrocket-league.comtradeedit
- @grant        none
- @require      httpcode.jquery.comjquery-3.4.1.min.js
- ==UserScript==
+// ==UserScript==
+// @name         RocketLeague Autobumper - Bump
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://rocket-league.com/trade/edit*
+// @grant        none
+// @require      http://code.jquery.com/jquery-3.4.1.min.js
+// ==/UserScript==
 
 (function() {
-    'use strict';
+ 'use strict';
 
-    setTimeout(function(){$('.rlg-btn-trade-form').click();}, 8577);
+ setTimeout(function(){$('.rlg-btn-trade-form').click();}, Math.floor(Math.random()*(10324-7523+1)+7523));
 })();

@@ -12,5 +12,5 @@
 (function() {
     'use strict';
 
-    setTimeout(function(){window.location.href = "https://rocket-league.com/trades/JulianDibr";}, 2835);
+    setTimeout(function(){window.location.href = "https://rocket-league.com/trades/JulianDibr";}, Math.floor(Math.random()*(3513-2653+1)+2653));
 })();

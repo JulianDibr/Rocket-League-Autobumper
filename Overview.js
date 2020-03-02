@@ -12,16 +12,17 @@
 
 (function() {
     'use strict';
-        var buttons = $('.rlg-btn-secondary');
-        var element = buttons.length - 1;
-        var container = buttons[element].closest('.rlg-trade-display-container');
-        var timeHeader = $(container).find('.rlg-trade-display-added').text();
-        timeHeader = timeHeader.replace(/\D/g,'');
+    var buttons = $('.rlg-btn-secondary');
+    var element = buttons.length - 1;
+    var container = buttons[element].closest('.rlg-trade-display-container');
+    var timeHeader = $(container).find('.rlg-trade-display-added').text();
+    timeHeader = timeHeader.replace(/\D/g,'');
 
-        if (timeHeader > 20){
-            setTimeout(function(){buttons[element].click();}, 10531);
-        } else
-        {
-            setTimeout(function(){location.reload();}, 120000);
-        }
+    if (timeHeader > Math.floor(Math.random()*(26-20+1)+20)){
+        //if(true){
+        setTimeout(function(){buttons[element].click();}, Math.floor(Math.random()*(18304-7928+1)+7928));
+    } else
+    {
+        setTimeout(function(){location.reload();}, Math.floor(Math.random()*(140329-107632+1)+107632));
+    }
 })();
